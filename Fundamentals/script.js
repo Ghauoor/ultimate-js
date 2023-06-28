@@ -52,3 +52,28 @@ console.log("23" / "10" / 3);
 let n = "1" + 1; // 11
 n = n - 1; // 11 - 1 --> 10
 console.log(n);
+
+//? Truthy and Falsy Values --> Are Value that are not exact false or true but will become false or true when we convert them into Boolean
+
+//! Falsy value --> 0, '', undefine, null, NaN
+console.log(Boolean(0));
+console.log(Boolean(""));
+console.log(Boolean(undefined));
+console.log(Boolean(null));
+console.log(Boolean(NaN));
+
+//* Falsy value example
+const money = 0;
+if (money) {
+  console.log("Donot Spend it all ;)");
+} else {
+  console.log("You Should get a job ;(");
+}
+
+let height;
+if (height) {
+  console.log("Yayy height is defined");
+} else {
+  console.log("height is Undefined");
+}
+
