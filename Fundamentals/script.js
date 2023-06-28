@@ -36,3 +36,10 @@ console.log(ghayoor);
 
 const ghayoorHussain = `I'm ${firstName}, a ${profession}`;
 console.log(ghayoorHussain);
+
+//? Conversion and Coresion
+const inputYear = "1991";
+console.log(Number(inputYear) + 18);
+
+//! If you want to convert a string which is not valid is ie 'ghauoor' it will give `NaN error` NaN still a number but it's a invalid number
+

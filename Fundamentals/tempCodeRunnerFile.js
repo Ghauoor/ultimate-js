@@ -1,0 +1,1 @@
+inputYear + 18
