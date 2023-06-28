@@ -23,3 +23,16 @@ job = "DBA";
 //? let is block scope and var is function scope
 
 //! Never do this --> name = "Ghauoor"
+
+//? Operator are pretty much same as any other lang
+
+//? Strings
+const firstName = "Ghayoor";
+const profession = "Programmer";
+const birthDay = 1991;
+
+const ghayoor = "I'm " + firstName + ", a " + profession;
+console.log(ghayoor);
+
+const ghayoorHussain = `I'm ${firstName}, a ${profession}`;
+console.log(ghayoorHussain);
