@@ -107,3 +107,37 @@ const hasGoodVision = false;
 console.log(hasDriverLicense && hasGoodVision);
 console.log(hasDriverLicense || hasGoodVision);
 console.log(!hasDriverLicense);
+
+//? Switch Cases
+const day = "Monday";
+
+switch (day) {
+  case "Monday":
+    console.log("Plan to play Cricket");
+    break;
+  case "Monday":
+    console.log("Plan to play Cricket");
+    break;
+  case "Tuesday":
+    console.log("Plan to play Takken");
+    break;
+  case "Wednessday":
+    console.log("Plan to play Cricket League");
+    break;
+  case "Thursday":
+    console.log("Plan to play Piano");
+    break;
+  case "Friday":
+    console.log("Plan to play Base Ball");
+    break;
+  case "Saturday":
+    console.log("Plan to play Nothing");
+    break;
+  case "Sanday":
+    console.log("Plan to play Anything");
+    break;
+
+  default:
+    console.log("This is default case");
+    break;
+}
