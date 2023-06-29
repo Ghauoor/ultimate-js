@@ -99,4 +99,11 @@ if (anyAge == 19) {
 
 // Can get user input by using prompt func --> const fav = prompt("Your Fav number");
 
+// Logical operators are same
 
+const hasDriverLicense = true;
+const hasGoodVision = false;
+
+console.log(hasDriverLicense && hasGoodVision);
+console.log(hasDriverLicense || hasGoodVision);
+console.log(!hasDriverLicense);
