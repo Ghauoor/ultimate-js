@@ -141,3 +141,12 @@ switch (day) {
     console.log("This is default case");
     break;
 }
+
+/*
+Statements and Expressions
+
+Expressions ==> is piece of code which produce a value ie 7 + 8
+Statement ==> bigger piece of code which donot produce a value own it's own 
+*/
+
+
