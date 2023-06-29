@@ -77,3 +77,26 @@ if (height) {
   console.log("height is Undefined");
 }
 
+//? Equality Operator == vs ===
+/*
+=== --> strick equality it does not perform type coehersion it return true when two value is exactly the same 
+
+== --> loose equality --> does type cohersion so it can introduce bugs to try to avoid it 
+
+*/
+
+console.log("18" == 18);
+console.log("18" === 18);
+
+const anyAge = "19";
+if (anyAge === 19) {
+  console.log("Strick");
+}
+
+if (anyAge == 19) {
+  console.log("Loose");
+}
+
+// Can get user input by using prompt func --> const fav = prompt("Your Fav number");
+
+
