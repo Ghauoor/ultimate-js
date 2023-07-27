@@ -53,6 +53,13 @@ let n = "1" + 1; // 11
 n = n - 1; // 11 - 1 --> 10
 console.log(n);
 
+let anyNum = "12abc";
+let convertAnyNum = Number(anyNum);
+console.log(typeof convertAnyNum);
+
+console.log("1" + 2);
+console.log(1 + 2 + "2");
+
 //? Truthy and Falsy Values --> Are Value that are not exact false or true but will become false or true when we convert them into Boolean
 
 //! Falsy value --> 0, '', undefine, null, NaN
@@ -149,4 +156,7 @@ Expressions ==> is piece of code which produce a value ie 7 + 8
 Statement ==> bigger piece of code which donot produce a value own it's own 
 */
 
-
+//? Random Number
+// 16 decimal Place random number
+// It never reach 1
+let randomNum = Math.random();
