@@ -87,4 +87,3 @@ function maxOfArray(getArr) {
 }
 
 // console.log(maxOfArray(arr));
-

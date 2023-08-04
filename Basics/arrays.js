@@ -22,8 +22,8 @@ const myArr = new Array([1]);
 const heros = ["Thor", "IronMan", "SpiderMan"];
 const dc = ["SuperMan", "Flash", "BatMan"];
 
-// heros.push(dc);
-// console.log(heros);
+heros.push(dc);
+console.log(heros);
 // console.log(heros[3][1]);
 
 // const allHeros = heros.concat(dc); //? return new array
