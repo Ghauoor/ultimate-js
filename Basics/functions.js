@@ -1,3 +1,20 @@
+/* function statement==> when function keyword is use then it is a func declaration or state and special thing about statement is it is always be hoisted (use anywhere in this file) which means if a func is dec bottom u can use or ref any where in the file
+
+ie. 
+function sayHi(name) {
+  return `Said.... ${name}`
+}
+
+function Expression ==> any code code above it cannot ref it 
+const sayHi = function (name) {
+  return `Said.... ${name}`
+}
+
+
+- Declaration for global code
+- Expression for local code
+*/
+
 function sayMyName() {
   console.log("G");
   console.log("h");

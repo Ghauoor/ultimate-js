@@ -48,4 +48,70 @@ const book = books.filter((bk) => {
   }
 });
 
-console.log(book);
+// console.log(book);
+
+//* ++++++++++++++ .map() +++++++++++++++++++++++++++++
+
+const newNums = nums.map((num) => {
+  return num + 10;
+});
+// console.log(newNums);
+
+nums.forEach((item) => item + 10);
+
+//* +++++++ Chaining +++++++++++++
+const nNums = nums
+  .map((num) => num * 10)
+  .map((num) => num + 1)
+  .filter((item) => item >= 40);
+
+// console.log(nNums);
+
+//* ++++++++++++ reduce() +++++++++++++++++++
+//? accumulator ==> empty var, in the first itration accumulator val is initial value but after first itration hold the result of first itration
+
+const total = nums.reduce((acc, curVal) => {
+  //console.log(`Accumulator val is ${acc} and current val is ${curVal}`);
+  return acc + curVal;
+}, 0);
+// console.log("Total sum is => ", total);
+
+// const bArr = [...nums];
+// const lTotal = bArr.reduce(function (accumulator, current) {
+//   return accumulator + current;
+// });
+
+// console.log(lTotal);
+
+const shoppingCart = [
+  {
+    itemName: "js course",
+    price: 200,
+  },
+  {
+    itemName: "js course",
+    price: 200,
+  },
+  {
+    itemName: "java course",
+    price: 400,
+  },
+  {
+    itemName: "ruby course",
+    price: 100,
+  },
+  {
+    itemName: "react course",
+    price: 500,
+  },
+];
+
+const totalPrice = shoppingCart.reduce((acc, item) => {
+  return acc + item.price;
+}, 0);
+
+const nPrice = shoppingCart
+  .filter((item) => item.price >= 400)
+  .reduce((acc, item) => acc + item.price, 0);
+
+console.log(nPrice);
