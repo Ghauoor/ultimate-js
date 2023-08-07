@@ -14,7 +14,7 @@ const myArr = new Array([1]);
 // console.log(array);
 
 // slice and splice
-// const myNewArrayOne = array.slice(1, 3); //? return a shallow copy of the portion
+// const myNewArrayOne = array.slice(1, 3); //? return a shallow copy of the portion --> [ 1, 2 ]
 // console.log("A", myNewArrayOne);
 // const myNewArrayTwo = array.splice(1, 3);
 // console.log("B", myNewArrayTwo);
