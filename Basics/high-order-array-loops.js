@@ -1,4 +1,4 @@
-//? for of
+//
 
 const user = [
   {
@@ -67,7 +67,7 @@ const myObject = {
 //   console.log(val);
 // }
 
-// for in loop bring key
+// for in loop bring key it itrate over the property names and does so in unspecify order which can bring unpredictable results
 for (const key in myObject) {
   //console.log(`${key} and value is ${myObject[key]}`);
 }
