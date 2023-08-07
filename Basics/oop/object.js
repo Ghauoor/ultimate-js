@@ -1,30 +1,30 @@
-# jS and Classes
+function multiByFive(num) {
+  return num * 5;
+}
+multiByFive.power = 2;
 
-## OOP
+// console.log(multiByFive(4));
+// console.log(multiByFive.power);
+// console.log(multiByFive.prototype);
 
-## Object
+function createUser(userName, score) {
+  this.userName = userName;
+  this.score = score;
+}
 
-- Collections of Properties and methods
+createUser.prototype.increment = function () {
+  this.score++;
+};
+createUser.prototype.printMe = function () {
+  console.log(`Score is ${this.score}`);
+};
 
-## why we use OOP
+const coffee = new createUser("Coffee", 22);
+const Sugar = new createUser("Sugar", 12);
 
-## parts of OOP
+coffee.printMe();
 
-object literal
-
-- Constructor
-- Prototype
-- classes
-- Instances (new, this)
-
-# 4 pillar
-
-- Abstraction
-- Encapsulation
-- Ineritance
-- Polymorphism
-
-# Behind the scenes of new keyword
+/*
 
 Here's what happens behind the scenes when the new keyword is used:
 
@@ -35,3 +35,5 @@ A prototype is linked: The newly created object gets linked to the prototype pro
 The constructor is called: The constructor function is called with the specified arguments and this is bound to the newly created object. If no explicit return value is specified from the constructor, JavaScript assumes this, the newly created object, to be the intended return value.
 
 The new object is returned: After the constructor function has been called, if it doesn't return a non-primitive value (object, array, function, etc.), the newly created object is returned.
+
+*/
