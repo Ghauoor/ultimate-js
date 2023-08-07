@@ -39,3 +39,15 @@ When Stack memory in use it means copy of value is aviliable
 -> Heap (Non-Primitive Datatypes)
 When Heap is in use Orignal ref aviliable
 Mean any changes leads to changing the actual value
+
+# Promise
+
+The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+
+A Promise is in one of these states:
+
+### pending: initial state, neither fulfilled nor rejected.
+
+### fulfilled: meaning that the operation was completed successfully.
+
+### rejected: meaning that the operation failed.
