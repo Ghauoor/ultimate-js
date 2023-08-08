@@ -1,3 +1,5 @@
+//* jS object have a special property called prototype which is either null or reference to the other object
+
 let userName = "Ghayoor";
 console.log(userName.trueLength);
 
