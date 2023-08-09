@@ -98,5 +98,18 @@ const course = {
 
 const { courseIns } = course;
 const { courseIns: instructor } = course;
-console.log(courseIns);
-console.log(instructor);
+// console.log(courseIns);
+// console.log(instructor);
+
+const fName = "Ghayoor";
+const lName = "Hussain";
+
+const usrs = {
+  fName,
+  lName,
+};
+
+function printName() {
+  return console.log(this.fName, "", this.lName);
+}
+printName.call(usrs);
