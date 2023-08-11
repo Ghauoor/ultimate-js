@@ -8,6 +8,7 @@
 //   })
 //   .catch((e) => console.log(e));
 const apiReq = "https://catfact.ninja/breeds";
+const userReq = "https://jsonplaceholder.typicode.com/users";
 const api = async function (api) {
   try {
     const response = await fetch(api);
