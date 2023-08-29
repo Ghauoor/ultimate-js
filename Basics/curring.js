@@ -32,6 +32,14 @@ function sendAutoMail(to) {
   };
 }
 
-let stepOne = sendAutoMail("ghayoor@gmail.com");
+// or
+
+const sendAutoMails = (to) => (subject) => (body) => {
+  return console.log(
+    `Sending mail to ${to} with this subject ${subject} and with this body ${body}`
+  );
+};
+
+let stepOne = sendAutoMails("ghayoor@gmail.com");
 let stepTwo = stepOne("New Order confirmation is here");
 stepTwo("Hey Ghayoor here is somethings is for you");
