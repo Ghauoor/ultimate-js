@@ -13,6 +13,6 @@ function reverseString(str) {
   return reversed;
 }
 
-const result = reverseString("Hello");
+const result = isPalindrome("Hello $$$");
 
 console.log(result);
