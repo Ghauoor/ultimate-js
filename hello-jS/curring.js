@@ -16,4 +16,16 @@ function multi(x) {
 }
 
 const multiByTwo = multi(2);
-multiByTwo(6);
+// multiByTwo(6);
+
+// ques sum (1)(2)(3)()...(n) --> return the sum
+let sum = function (a) {
+  return function (b) {
+    if (b) return sum(a + b);
+    return a;
+  };
+};
+
+let sumOneLiner = (a) => (b) => b ? sum(a + b) : a;
+console.log(sum(1)(2)(3)());
+console.log(sumOneLiner(1)(2)(3)());
