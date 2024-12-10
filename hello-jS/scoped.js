@@ -6,16 +6,25 @@
 // 5. The shadow should not cross the scope of original otherwise it will give error.
 // 6. shadowing let with var is illegal shadowing and gives error.
 // 7. var value is stored in nearest outer function or global scope and hence can be accessed outside block as well whereas same is not the case with let and const.
-var a = 100;
-let b = 122;
+// var a = 100;
+// let b = 122;
 {
-  var a = 10;
-  let b = 11;
-  const c = 12;
-
-  console.log(a);
-  console.log(b);
-  console.log(c);
+  // var a = 10;
+  // let b = 11;
+  // const c = 12;
+  // console.log("Block a ", a);
+  // console.log("Block b ", b);
+  // console.log("Block c ", c);
 }
-console.log(a);
-console.log(b);
+// console.log(a);
+// console.log(b);
+
+function a() {
+  c();
+  function c() {
+    console.log(b);
+  }
+}
+
+var b = 10;
+a();

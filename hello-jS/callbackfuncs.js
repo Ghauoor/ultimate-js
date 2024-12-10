@@ -90,4 +90,4 @@ fetchData(function (data) {
 //   });
 // }
 
-// attachedEventListners();
+// attachedEventListeners();

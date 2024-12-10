@@ -1,6 +1,6 @@
 const des = Object.getOwnPropertyDescriptor(Math, "PI");
 
-// console.log(des);
+console.log(des);
 
 const coffee = {
   name: "IceCoffee",
@@ -10,7 +10,7 @@ const coffee = {
     console.log("Coffee is not ready yet");
   },
 };
-console.log(Object.getOwnPropertyDescriptor(coffee, "name"));
+// console.log(Object.getOwnPropertyDescriptor(coffee, "name"));
 
 Object.defineProperty(coffee, "name", { writable: false, enumerable: false });
 

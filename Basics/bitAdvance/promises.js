@@ -4,7 +4,6 @@
 const promiseOne = new Promise(function (resolve, reject) {
   // Do all async task ie DB crud
   // Network call
-
   setTimeout(function () {
     console.log("Async task is complete");
     resolve({

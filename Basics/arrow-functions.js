@@ -15,7 +15,8 @@ const user = {
 
 function chai() {
   let userName = "Ghayoor";
-  console.log(this.userName); //! will through undefine context will work in obj not in func
+  console.log(this);
+  console.log(this.userName); //! will through undefine context will work in obj but not in func
 }
 // chai();
 const coffee = () => {
@@ -42,7 +43,7 @@ const addFive = () => ({ userName: "ghayoor" });
 // const myArr = [1, 2, 3, 4, 4];
 
 // myArr.forEach(function (i) {
-//   console.log(i);    
+//   console.log(i);
 // });
 
 // myArr.forEach((index) => (console.log(index)));

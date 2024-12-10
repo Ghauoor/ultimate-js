@@ -44,8 +44,8 @@ const calcDiagram = function (radius) {
 console.log(calcDiagram(radius));
 
 // flow dry principle
-
 // Modular code ref of prev code
+
 function area(radius) {
   return Math.PI * radius * radius;
 }

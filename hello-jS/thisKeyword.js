@@ -1,7 +1,7 @@
 "use strict";
 
 function x(params) {
-  console.log("THIS IS ", this); // depends upon the strict mode "this subsituation"
+  console.log("THIS IS ", this); // depends upon the strict mode "this substitution"
 }
 // console.log(x());
 

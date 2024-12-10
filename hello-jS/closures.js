@@ -16,9 +16,10 @@ function d() {
   var i = 7;
   setTimeout(function () {
     console.log(i);
-  }, 3000);
+  }, 1000);
+  i++; //* it print 8 because closures holds the var ref not the val
 }
-d();
+// d();
 
 function c() {
   for (var i = 1; i <= 5; i++) {
@@ -31,7 +32,7 @@ function c() {
   }
 }
 
-// c();
+c();
 
 function a() {
   var x = 10;
@@ -41,4 +42,4 @@ function a() {
 }
 
 var y = a();
-console.log(y());
+// console.log(y());

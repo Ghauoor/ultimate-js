@@ -8,4 +8,4 @@ function a() {
 var b = 10;
 a();
 
-// call stack --> GEC --> a() --> c()
+// call stack --> GEC --> a() --> c() --> b

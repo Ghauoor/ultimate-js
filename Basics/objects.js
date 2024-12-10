@@ -47,6 +47,7 @@ const regularUser = {
 };
 
 // console.log(regularUser["fullName"]["userFullName"]["firstName"]);
+// console.log(regularUser?.fullName?.userFullName?.firstName) // ?. is optional chaing for the checks is val is present or not
 
 const obj1 = {
   1: "a",
@@ -82,6 +83,7 @@ const users = [
 
 // console.log(users[1].email);
 
+//* Imp. Methods
 // console.log(Object.keys(tinderUser));
 // console.log(Object.values(tinderUser));
 // console.log(Object.entries(tinderUser));
